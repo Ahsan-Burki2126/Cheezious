@@ -4,13 +4,19 @@ import viteLogo from '/vite.svg'
 import Header from './components/Header'
 import './App.css'
 import Carousel from './components/Carousel';
+import Menu from './components/Menu';
 
 function App() {
 
   return (
     <>
+      
       <Header />
       <Carousel />
+      <Menu />
+
+      
+
     </>
   )
 }

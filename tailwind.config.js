@@ -9,6 +9,7 @@ export default {
       colors: {
         customYellow: '#ffcb05',
         customRed: '#d90002',
+        menuItemBG:'#e5e5e5',
       },
     },
   },

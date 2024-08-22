@@ -5,7 +5,7 @@ import { MapPin, Search, User, ShoppingCart } from 'lucide-react';
 const Header = () => {
   return (
     <>
-      <header className='flex flex-wrap justify-between items-center bg-customYellow px-4 sm:px-8 md:px-16 py-4'>
+      <header className='sticky top-0 z-10 flex flex-wrap justify-between items-center bg-customYellow px-4 sm:px-8 md:px-16 py-4'>
         <div className='flex items-center gap-4 order-1 sm:order-2'>
           <div className='w-[75px] sm:hidden'>
             <img src={LOGO} alt="LOGO" />
