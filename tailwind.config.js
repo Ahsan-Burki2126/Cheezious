@@ -12,6 +12,7 @@ export default {
         menuItemBG: '#e5e5e5',
         bodyBG: '#f8f9fb',
         FAQ: '#665102',
+        customWhite: '#f5f5f5',
       },
     },
   },

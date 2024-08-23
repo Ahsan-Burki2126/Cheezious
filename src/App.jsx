@@ -8,20 +8,27 @@ import Menu from './components/Menu';
 import AppExclusive from './components/AppExclusive'
 import Accordion from './components/Accordian'
 import Footer from './components/Footer'
-
+import LOGO from "../src/assets/images/LOGO.png"
+import DealCard from './components/DealCard'
+import Starters from './components/starters'
+import SomeLocal from './components/SomeLocal';
+import Deals from './components/Deals';
 function App() {
 
   return (
     <>
-      
+      <div className='bg-customWhite'>
       <Header />
       <Carousel />
       <Menu />
-      {/* <AppExclusive /> */}
+      <AppExclusive />
+      <Starters />
+        <SomeLocal /> 
+       <Deals />
       <Accordion />
       <Footer />
-      
 
+      </div>
     </>
   )
 }

@@ -29,7 +29,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className='sticky top-24 flex justify-center items-center mx-0 lg:mx-20 shadow-sm bg-white'>
+    <div className='sticky top-24 flex justify-center items-center mx-0 lg:mx-20 shadow-sm bg-customWhite rounded-full px-2'>
       <ChevronLeft
         size={96}
         className={`cursor-pointer ${scrollPosition === 0 ? 'opacity-50' : 'opacity-100'}`}
