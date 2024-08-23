@@ -1,6 +1,10 @@
 import React from "react";
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import LOGO from "../assets/images/LOGO.png";
+import AppStore from "../assets/images/AppStore.svg"
+import PlayStore from "../assets/images/PlayStore.svg"
+import facebook from '../assets/images/facebook.png'
+import instagram from '../assets/images/instagram.png'
 
 const Footer = () => {
   return (
@@ -37,16 +41,16 @@ const Footer = () => {
                   123 Main Street, Islamabad
                 </a>
               </div>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mt-12 ">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  src={PlayStore}
                   alt="Google Play Store"
-                  className="w-24"
+                  className="w-32 cursor-pointer"
                 />
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/67/Download_on_the_App_Store_Badge_US-UK_RGB_blk.svg"
+                  src={AppStore}
                   alt="App Store"
-                  className="w-24"
+                  className="w-32 cursor-pointer"
                 />
               </div>
             </div>
@@ -67,16 +71,16 @@ const Footer = () => {
             <li>Sunday: Closed</li>
           </ul>
           <div className="flex space-x-4 mt-4">
-            <Instagram color="#d90002" />
-            <Facebook color="#d90002" />
+            <img src={facebook} alt="insta"  className="w-10 cursor-pointer"/>
+            <img src={instagram} alt="facebook"  className="w-10 cursor-pointer"/>
           </div>
         </div>
       </div>
 
       {/* Horizontal Rule and Copyright Text */}
-      <hr className="border-black mt-8" />
+      <hr className="border-black mt-8 w-[85%] mx-auto" />
       <div className="text-center py-4 text-sm">
-        © 2024 Company Name. All rights reserved.
+        © 2024 Cheezious. All rights reserved.
       </div>
     </footer>
   );
