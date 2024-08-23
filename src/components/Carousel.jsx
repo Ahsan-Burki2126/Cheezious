@@ -42,11 +42,11 @@ const Carousel = () => {
       >
         {[advt1, advt2, advt3, advt4, advt5, advt6].map((image, index) => (
           <SwiperSlide key={index} className="flex items-center justify-center">
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden ">
               <img 
                 src={image} 
                 alt={`Slide ${index + 1}`} 
-                className="w-auto h-auto max-w-full max-h-[196px] sm:max-h-[294px] md:max-h-[343px] lg:max-h-[392px] object-contain"
+                className="w-auto h-auto  max-w-full max-h-[196px] sm:max-h-[294px] md:max-h-[343px] lg:max-h-[392px] object-contain"
               />
             </div>
           </SwiperSlide>
