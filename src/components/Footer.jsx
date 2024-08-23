@@ -76,7 +76,7 @@ const Footer = () => {
       {/* Horizontal Rule and Copyright Text */}
       <hr className="border-black mt-8" />
       <div className="text-center py-4 text-sm">
-        © 2024 Company Name. All rights reserved.
+        © 2024 Cheezious. All rights reserved.
       </div>
     </footer>
   );
