@@ -7,6 +7,7 @@ import Carousel from './components/Carousel';
 import Menu from './components/Menu';
 import AppExclusive from './components/AppExclusive'
 import Accordion from './components/Accordian'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Menu />
       {/* <AppExclusive /> */}
       <Accordion />
+      <Footer />
       
 
     </>

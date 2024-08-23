@@ -18,7 +18,7 @@ const Carousel = () => {
 
   return (
     <div className="relative flex justify-center items-center mt-10">
-      <div ref={prevRef} className="relative left-16 cursor-pointer z-10">
+      <div ref={prevRef} className="relative left-16 cursor-pointer ">
         <ChevronLeft size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block'/>
       </div>
       <Swiper
@@ -52,7 +52,7 @@ const Carousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div ref={nextRef} className="relative right-16 cursor-pointer z-10">
+      <div ref={nextRef} className="relative right-16 cursor-pointer ">
         <ChevronRight size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block'/>
       </div>
     </div>

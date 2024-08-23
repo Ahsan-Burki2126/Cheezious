@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const AccordionItem = ({ title, content, isOpen, onToggle }) => {
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-gray-200 ">
       <button
         className="flex justify-between items-center w-full py-3 px-4 text-left"
         onClick={onToggle}
@@ -60,9 +60,9 @@ const accordionData = [
 
 
     return (
-        <div className="w-4/5 rounded-lg my-16 mx-auto  px-6  flex flex-col py-10 justify-center items-center  bg-customYellow">
+        <div className="w-[85%] rounded-lg my-16 mx-auto  px-6  flex flex-col py-10 justify-center items-center  bg-customYellow">
             <h1 className='text-center inline text-4xl font-bold '>Spreading Cheezy Khushia!</h1>
-    <div className="max-w-3xl mx-auto mt-8 bg-FAQ  shadow-lg rounded-lg overflow-hidden">
+    <div className="max-w-4xl mx-auto mt-8 bg-FAQ  shadow-lg rounded-lg overflow-hidden">
       {accordionData.map((item, index) => (
         <AccordionItem
           key={index}
