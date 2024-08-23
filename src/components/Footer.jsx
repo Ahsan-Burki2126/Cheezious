@@ -5,9 +5,9 @@ import LOGO from "../assets/images/LOGO.png";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-8">
-      <div className="container mx-auto flex flex-wrap justify-between items-start">
+      <div className="container mx-auto flex flex-wrap justify-between items-center px-14 lg:px-0">
         {/* Company Contact and Links Section */}
-        <div className="w-full lg:w-2/3 mb-8 lg:mb-0 flex flex-col justify-start items-center lg:flex-row  lg:items-center gap-24 ">
+        <div className="w-full lg:w-2/3 mb-8 lg:mb-0 flex flex-col justify-center lg:flex-row items-start lg:items-center gap-24 h-full">
           {/* Logo */}
           <div className="mt-4 lg:mt-0 lg:ml-8">
             <img
@@ -76,7 +76,7 @@ const Footer = () => {
       {/* Horizontal Rule and Copyright Text */}
       <hr className="border-black mt-8" />
       <div className="text-center py-4 text-sm">
-        © 2024 Cheezious. All rights reserved.
+        © 2024 Company Name. All rights reserved.
       </div>
     </footer>
   );
