@@ -19,7 +19,7 @@ const Carousel = () => {
 
   return (
     <div className="relative flex justify-center items-center mt-0">
-      <div ref={prevRef} className="relative left-16 z-10 cursor-pointer">
+      <div ref={prevRef} className="relative left-16  cursor-pointer">
         <ChevronLeft size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block'/>
       </div>
       <Swiper
@@ -63,8 +63,8 @@ const Carousel = () => {
           <img src={advt6} alt="Slide 6" className="w-full h-[196px] sm:h-[294px] md:h-[343px] lg:h-[392px] object-contain rounded-md" />
         </SwiperSlide>
       </Swiper>
-      <div ref={nextRef} className="relative right-16 z-10 cursor-pointer">
-        <ChevronRight size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block'/>
+      <div ref={nextRef} className="relative right-16 cursor-pointer ">
+        <ChevronRight size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block '/>
       </div>
     </div>
   );

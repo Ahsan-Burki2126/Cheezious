@@ -5,6 +5,8 @@ import Header from './components/Header'
 import './App.css'
 import Carousel from './components/Carousel';
 import Menu from './components/Menu';
+import AppExclusive from './components/AppExclusive'
+import Accordion from './components/Accordian'
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
       <Header />
       <Carousel />
       <Menu />
-
+      {/* <AppExclusive /> */}
+      <Accordion />
       
 
     </>
