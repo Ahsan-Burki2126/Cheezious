@@ -5,7 +5,7 @@ const AccordionItem = ({ title, content, isOpen, onToggle }) => {
   return (
     <div className="border-b border-gray-200">
       <button
-        className="flex justify-between items-center w-full py-5 px-4 text-left"
+        className="flex justify-between items-center w-full py-3 px-4 text-left"
         onClick={onToggle}
       >
         <span className="text-lg font-medium text-white">{title}</span>
