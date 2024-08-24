@@ -2,8 +2,8 @@ import React from 'react'
 import DealCard from './DealCard';
 import  ArabicRolls  from '../assets/images/deals/ArabicRolls.png';
 import BihariRolls from '../assets/images/deals/BihariROlls.png';
-import LegPieces from "../assets/images/deals/LegPieces.png"
-import OvenBakedWings from "../assets/images/deals/OvenBakedWings.png"
+import LegPieces from "../assets/images/deals/LegPieces.png";
+import OvenBakedWings from "../assets/images/deals/OvenBakedWings.png";
 const Starters = () => {
   return (
       <>

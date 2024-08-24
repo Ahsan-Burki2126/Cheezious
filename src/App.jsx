@@ -9,7 +9,6 @@ import AppExclusive from './components/AppExclusive'
 import Accordion from './components/Accordian'
 import Footer from './components/Footer'
 import LOGO from "../src/assets/images/LOGO.png"
-import DealCard from './components/DealCard'
 import Starters from './components/Starters'
 import SomeLocal from './components/SomeLocal';
 import Deals from './components/Deals';
@@ -22,7 +21,7 @@ function App() {
       <Carousel />
       <Menu />
       <AppExclusive />
-        <Starters />
+      <Starters />
         <SomeLocal /> 
        <Deals />
       <Accordion />
