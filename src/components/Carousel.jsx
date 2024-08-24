@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,12 +13,22 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Carousel = () => {
+  const swiperRef = useRef(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
+  useEffect(() => {
+    if (swiperRef.current && prevRef.current && nextRef.current) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, []);
+
   return (
     <div className="relative flex justify-center items-center mt-10">
-      <div ref={prevRef} className="relative left-16 cursor-pointer ">
+      <div ref={prevRef} className="relative left-16 cursor-pointer">
         <ChevronLeft size={48} color='white' className='bg-customRed h-20 rounded-full hidden lg:block'/>
       </div>
       <Swiper
@@ -33,9 +43,8 @@ const Carousel = () => {
           prevEl: prevRef.current,
           nextEl: nextRef.current,
         }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
         }}
         speed={900}
         className="w-full max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mySwiper"

@@ -8,7 +8,7 @@ const DealCard = ({
   onAddToCart
 }) => {
   return (
-    <div className="w-[230px] p-2.5 rounded-[20px] bg-white shadow-md border-3 border-gray-200 hover:border-customYellow pb-6">
+    <div className="w-[230px] p-2.5 rounded-[20px] bg-white shadow-md border-2 border-gray-200 hover:border-customYellow pb-6">
       <div className="mb-2">
         <img src={image} alt={title} className="w-full rounded-[18px]" />
       </div>

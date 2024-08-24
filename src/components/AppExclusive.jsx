@@ -1,6 +1,7 @@
 import React from 'react'
 import DealCard from './DealCard';
-import LOGO from "../assets/images/LOGO.png"
+import LOGO from "../assets/images/LOGO.png";
+
 const AppExclusive = () => {
   return (
       <>

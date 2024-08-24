@@ -5,13 +5,15 @@ import Header from './components/Header'
 import './App.css'
 import Carousel from './components/Carousel';
 import Menu from './components/Menu';
-import AppExclusive from './components/AppExclusive'
+// import AppExclusive from './components/AppExclusive'
 import Accordion from './components/Accordian'
 import Footer from './components/Footer'
-import LOGO from "../src/assets/images/LOGO.png"
-import Starters from './components/Starters'
+// import LOGO from "../src/assets/images/LOGO.png"
+import Starters from './components/Starters';
 import SomeLocal from './components/SomeLocal';
 import Deals from './components/Deals';
+import Drinks from './components/Drinks';
+import ChickenDelight from './components/ChickenDelight'
 function App() {
 
   return (
@@ -20,11 +22,12 @@ function App() {
       <Header />
       <Carousel />
       <Menu />
-      <AppExclusive />
-        <SomeLocal /> 
-        <Deals />
+        {/* <AppExclusive /> */}
       <Starters />
-        
+      <ChickenDelight />
+      <SomeLocal /> 
+      <Deals />
+      <Drinks />
       <Accordion />
       <Footer />
 

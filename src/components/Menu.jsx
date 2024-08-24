@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const Menu = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const menuRef = useRef(null);
 
   const scroll = (direction) => {
-    const scrollAmount = 200; // Adjust this value to control scroll distance
+    const scrollAmount = 200; // Adjusted scroll distance
     if (menuRef.current) {
       if (direction === 'left') {
         menuRef.current.scrollLeft -= scrollAmount;
@@ -29,9 +30,9 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className='sticky top-24 flex justify-center items-center mx-0 lg:mx-20 shadow-sm bg-customWhite rounded-full px-2'>
+    <div className='sticky top-24 flex justify-between items-center mx-0 lg:mx-20 shadow-sm bg-customWhite rounded-full px-6'>
       <ChevronLeft
-        size={96}
+        size={48}
         className={`cursor-pointer ${scrollPosition === 0 ? 'opacity-50' : 'opacity-100'}`}
         onClick={() => scroll('left')}
       />
@@ -46,27 +47,65 @@ const Menu = () => {
         }}
       >
         <div className='flex flex-nowrap justify-start items-center gap-3 py-4'>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Fries</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheeseburger</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pizza</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4   bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Grilled Cheese Sandwich</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Nachos</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mozzarella Sticks</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mac and Cheese</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Garlic Bread</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Quesadilla</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Stuffed Burgers</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheddar Bites</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Dip</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Fritters</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pancakes</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Wedges</a>
-          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese-Stuffed Mushrooms</a>
+          <Link 
+            to="starters" 
+            smooth={true} 
+            duration={500} 
+            spy={true}
+            offset={-180} // Adjusted offset for better visibility
+            className='cursor-pointer px-3 py-2 lg:px-8 lg:py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'
+            activeClass="bg-customYellow"
+          >
+            Starters
+          </Link>
+          <Link 
+            to="chicken-delight" 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            offset={-180} 
+            className='cursor-pointer px-3 py-2 lg:px-8 lg:py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'
+            activeClass="bg-customYellow"
+          >
+            Chicken Delight
+          </Link>
+          <Link 
+            to="somewhat-local" 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            offset={-180} 
+            className='cursor-pointer px-3 py-2 lg:px-8 lg:py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'
+            activeClass="bg-customYellow"
+          >
+            SomeWhat Local
+          </Link>
+          <Link 
+            to="deals" 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            offset={-180} 
+            className='cursor-pointer px-3 py-2 lg:px-8 lg:py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'
+            activeClass="bg-customYellow"
+          >
+            Deals
+          </Link>
+          <Link 
+            to="drinks" 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            offset={-180} 
+            className='cursor-pointer px-3 py-2 lg:px-8 lg:py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'
+            activeClass="bg-customYellow"
+          >
+            Drinks
+          </Link>
         </div>
       </div>
       <ChevronRight
-        size={96}
-        
+        size={48}
         className={`cursor-pointer ${scrollPosition >= (menuRef.current?.scrollWidth - menuRef.current?.clientWidth) ? 'opacity-50' : 'opacity-100'}`}
         onClick={() => scroll('right')}
       />

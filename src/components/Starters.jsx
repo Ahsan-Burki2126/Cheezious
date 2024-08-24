@@ -7,7 +7,7 @@ import OvenBakedWings from "../assets/images/deals/OvenBakedWings.png";
 const Starters = () => {
   return (
       <>
-        <div className='container flex-col w-[85%] mx-auto flex mt-6 rounded-xl  justify-start items-start border-y-2 border-gray-400 py-5'>
+        <div className='container flex-col w-[85%] mx-auto flex mt-6 rounded-xl  justify-start items-start border-y border-gray-400 py-5' id='starters'>
         <h1 className=' font-bold w-[85%] mx-auto text-xl lg:text-3xl text-center lg:text-start'>Starters</h1>
               <div className=" flex justify-center lg:justify-start items-center flex-wrap  gap-8  py-4    px-0 lg:px-20">
               <DealCard title="Leg Pieces" image={LegPieces} description="Tasty Leg Pieces" price={"599"}/>
