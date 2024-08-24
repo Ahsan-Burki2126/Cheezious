@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-gray-200 py-8 w-[85%] mx-auto rounded-r-lg rounded-l-lg">
       <div className="container mx-auto flex flex-wrap justify-between items-start px-14 lg:px-0">
         {/* Company Contact and Links Section */}
-        <div className="w-full lg:w-2/3 mb-8 lg:mb-0 flex flex-col justify-center lg:flex-row items-start lg:items-center gap-24 h-full">
+        <div className="w-full lg:w-2/3 mb-8 lg:mb-0 flex flex-col justify-center lg:flex-row items-start lg:items-center gap-10 lg:gap-24 h-full">
           {/* Logo */}
           <div className="mt-4 lg:mt-0 lg:ml-8">
             <img
@@ -45,12 +45,12 @@ const Footer = () => {
                 <img
                   src={PlayStore}
                   alt="Google Play Store"
-                  className="w-32 cursor-pointer"
+                  className="w-24 lg:w-32 cursor-pointer"
                 />
                 <img
                   src={AppStore}
                   alt="App Store"
-                  className="w-32 cursor-pointer"
+                  className="w-24 lg:w-32 cursor-pointer"
                 />
               </div>
             </div>

@@ -21,9 +21,10 @@ function App() {
       <Carousel />
       <Menu />
       <AppExclusive />
-      <Starters />
         <SomeLocal /> 
-       <Deals />
+        <Deals />
+      <Starters />
+        
       <Accordion />
       <Footer />
 

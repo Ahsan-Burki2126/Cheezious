@@ -61,7 +61,7 @@ const accordionData = [
 
     return (
         <div className="w-[85%] rounded-lg my-16 mx-auto  px-6  flex flex-col py-10 justify-center items-center  bg-customYellow">
-            <h1 className='text-center inline text-4xl font-bold '>Spreading Cheezy Khushia!</h1>
+            <h1 className='text-center inline text-xl lg:text-4xl font-bold '>Spreading Cheezy Khushia!</h1>
     <div className="max-w-4xl mx-auto mt-8 bg-FAQ  shadow-lg rounded-lg overflow-hidden">
       {accordionData.map((item, index) => (
         <AccordionItem

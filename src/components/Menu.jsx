@@ -46,22 +46,22 @@ const Menu = () => {
         }}
       >
         <div className='flex flex-nowrap justify-start items-center gap-3 py-4'>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Fries</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheeseburger</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pizza</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Grilled Cheese Sandwich</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Nachos</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mozzarella Sticks</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mac and Cheese</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Garlic Bread</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Quesadilla</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Stuffed Burgers</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheddar Bites</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Dip</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Fritters</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pancakes</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Wedges</a>
-          <a href="#" className='px-6 py-3 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese-Stuffed Mushrooms</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Fries</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheeseburger</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pizza</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4   bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Grilled Cheese Sandwich</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Nachos</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mozzarella Sticks</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Mac and Cheese</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheesy Garlic Bread</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Quesadilla</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Stuffed Burgers</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheddar Bites</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Dip</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Fritters</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Pancakes</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese Wedges</a>
+          <a href="#" className='px-3 py-2 lg:px-5 lg:py-4 bg-menuItemBG rounded-full font-bold hover:bg-customYellow whitespace-nowrap'>Cheese-Stuffed Mushrooms</a>
         </div>
       </div>
       <ChevronRight
